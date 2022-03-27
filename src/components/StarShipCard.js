@@ -5,15 +5,21 @@ function StarShipCard () {
 
     const [starShips, setStarShips] = useState([]);
 
+    
+
+    
     useEffect(()=> {
         getAllStarships()
-        console.log('running...' + getAllStarships())
+        console.log(getAllStarships())
+        console.log('running...')
     },[])
-
-    setStarShips(getAllStarships())
+    
+    // setStarShips(getAllStarships())
+    
 
     return (
         <div>
+            <h1> Howdy, Partner!</h1>
             <ul>
                 {(starShips || []).map((starShip, index) => {
                     const  { name } = starShip

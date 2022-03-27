@@ -6,7 +6,7 @@ import StarShipCard from './components/StarShipCard';
 function App() {
   return (
     <div className="App">
-      <StarShipCard/>
+      <StarShipCard />
     </div>
   );
 }

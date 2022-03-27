@@ -7,12 +7,15 @@ export const getAllStarships = async() => {
     try {
         const response = await axios.get(`${CLIENT_URL}${end_point}`);
         // console.log(response);
-        const res = [];
-        res.push(response.data.results);
-        console.log(res);
+        const result = [];
+        result.push(response.data.results);
+        // console.log(res)
+        return result;      
         }catch(error) {
         console.log(error);
-
-    }
+        
     }
     
+    }
+    
+    getAllStarships()
